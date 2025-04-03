@@ -32,13 +32,12 @@ dns:
     fake-ip-range: 198.18.0.1/16
     use-hosts: true
     nameserver:
-      - 'https://dns.alidns.com/dns-query'
-      - 'https://doh.pub/dns-query'
-      - '8.8.8.8'
-      - '1.1.1.1'
-    fallback:
-      - 'https://dns.alidns.com/dns-query'
-      - 'https://doh.pub/dns-query'
-      - '8.8.4.4'
-      - '1.0.0.1'
-    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
+      - 'tls://1.1.1.1#♻️ 自动选择'
+      - 'tls://8.8.8.8#♻️ 自动选择'
+    nameserver-policy:
+      'ChinaClassical,Apple,SteamCN,GoogleCN,UnBan,geosite:cn':
+        - 'tls://1.12.12.12'
+        - 223.5.5.5
+    proxy-server-nameserver:
+      - 'tls://1.12.12.12'
+      - 223.5.5.5
