@@ -27,17 +27,20 @@ geodata-mode: true
 dns:
     enable: true
     ipv6: true
-    default-nameserver: [223.5.5.5, 119.29.29.29, 8.8.8.8, 1.1.1.1]
+    default-nameserver: [8.8.8.8, 1.1.1.1, 223.5.5.5, 119.29.29.29]
     enhanced-mode: fake-ip
     fake-ip-range: 198.18.0.1/16
     use-hosts: true
+
     nameserver:
-      - 'tls://1.1.1.1#♻️ 自动选择'
-      - 'tls://8.8.8.8#♻️ 自动选择'
+      - 'https://cloudflare-dns.com/dns-query'
+      - 'https://dns.google/dns-query'
+
     nameserver-policy:
       'ChinaClassical,Apple,SteamCN,GoogleCN,UnBan,geosite:cn':
-        - 'tls://1.12.12.12'
         - 223.5.5.5
+        - 'https://dns.alidns.com/dns-query'
+
     proxy-server-nameserver:
-      - 'tls://1.12.12.12'
-      - 223.5.5.5
+      - 'https://cloudflare-dns.com/dns-query'
+      - 'https://dns.google/dns-query'
