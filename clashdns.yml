@@ -1,3 +1,13 @@
+geox-url:
+  geoip: >-
+    https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat
+  geosite: >-
+    https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
+  mmdb: >-
+    https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb
+  asn: >-
+    https://mirror.ghproxy.com/https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
+
 # 健康检测
 my-check: &my-check
   interval: 3600
@@ -31,8 +41,6 @@ dns:
     enhanced-mode: fake-ip
     fake-ip-range: 198.18.0.1/16
     use-hosts: true
-    nameserver: ['tls://1.1.1.1#♻️ 自动选择', 'tls://8.8.8.8#♻️ 自动选择']
-    nameserver-policy: { 'ChinaClassical,Apple,SteamCN,GoogleCN,UnBan,geosite:cn': ['tls://1.12.12.12', 223.5.5.5] }
-    proxy-server-nameserver: ['tls://1.12.12.12', 223.5.5.5]
+    nameserver: ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
     fallback: ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
