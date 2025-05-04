@@ -1,0 +1,4 @@
+payload:
+  - DOMAIN-SUFFIX,szbdyd.com
+  - DOMAIN-SUFFIX,mcdn.bilivideo.cn
+  - DOMAIN-REGEX,.*pcdn.*biliapi.net
