@@ -2,6 +2,7 @@ payload:
   - DOMAIN,emby.enjoyit.eu.org
   - DOMAIN,emby.lcloud.wiki
   - DOMAIN,notnetflix.cos.cat
+  - DOMAIN,dragonli.misaka.be
   - DOMAIN-SUFFIX,1024.name
   - DOMAIN-SUFFIX,123456.al
   - DOMAIN-SUFFIX,252798.xyz
