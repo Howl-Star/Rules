@@ -3,7 +3,13 @@ payload:
   - DOMAIN,emby.lcloud.wiki
   - DOMAIN,notnetflix.cos.cat
   - DOMAIN,dragonli.misaka.be
-  - DOMAIN-SUFFIX,chilledmelon.com
+  - DOMAIN,rn.chilledmelon.com
+  - DOMAIN,cloudf.chilledmelon.com
+  - DOMAIN,seoul.chilledmelon.com
+  - DOMAIN,sjc.chilledmelon.com
+  - DOMAIN,daigua.chilledmelon.com
+  - DOMAIN,mzlpin.chilledmelon.com
+  - DOMAIN,mr.chilledmelon.com
   - DOMAIN-SUFFIX,123456.al
   - DOMAIN-SUFFIX,252798.xyz
   - DOMAIN-SUFFIX,285286.xyz
