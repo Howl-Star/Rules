@@ -1,4 +1,5 @@
 payload:
+  - IP-CIDR,38.71.127.3/32
   - DOMAIN,https://free.28.al
   - DOMAIN,embyplus.org
   - DOMAIN,dragonli.misaka.be
