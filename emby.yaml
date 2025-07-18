@@ -1,13 +1,4 @@
 payload:
   - IP-CIDR,38.71.127.3/32,no-resolve
-  - DOMAIN,free.28.al
   - DOMAIN,embyplus.org
   - DOMAIN,dragonli.misaka.be
-  - DOMAIN,rn.chilledmelon.com
-  - DOMAIN,cloudf.chilledmelon.com
-  - DOMAIN,seoul.chilledmelon.com
-  - DOMAIN,sjc.chilledmelon.com
-  - DOMAIN,daigua.chilledmelon.com
-  - DOMAIN,mzlpin.chilledmelon.com
-  - DOMAIN,mr.chilledmelon.com
-  - DOMAIN,emby.785858.xyz
