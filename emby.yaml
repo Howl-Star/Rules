@@ -1,4 +1,3 @@
 payload:
-  - IP-CIDR,38.71.127.3/32,no-resolve
-  - DOMAIN,embyplus.org
-  - DOMAIN,dragonli.misaka.be
+- DOMAIN,embyplus.org
+
