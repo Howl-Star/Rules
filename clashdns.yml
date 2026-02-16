@@ -4,6 +4,14 @@ geox-url:
   mmdb: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country-lite.mmdb"
   asn: "https://cdn.jsdelivr.net/gh/xishang0128/geoip@release/GeoLite2-ASN.mmdb"
 
+proxies:
+  - name: "🇭🇰 香港 HKT (链式落地)"
+    type: ss
+    server: 112.119.190.240
+    port: 8848
+    cipher: 2022-blake3-aes-128-gcm
+    password: "1zTukw7wGgG8XvMblJ4PZA=="
+    dialer-proxy: "🚀 节点选择"
 # 健康检测
 my-check: &my-check
   interval: 3600
