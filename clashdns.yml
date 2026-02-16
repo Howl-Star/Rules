@@ -12,6 +12,7 @@ proxies:
     cipher: 2022-blake3-aes-128-gcm
     password: "1zTukw7wGgG8XvMblJ4PZA=="
     dialer-proxy: "🚀 节点选择"
+
 # 健康检测
 my-check: &my-check
   interval: 3600
