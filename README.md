@@ -33,19 +33,6 @@
 
 ---
 
-## 🚀 使用方法（Clash）
-
-在 Clash 配置文件中添加如下内容：
-
-```yaml
-rules:
-  - "RULE-SET,https://raw.githubusercontent.com/Howl-Star/Rules/Default/Rules_Online_Mini.ini, AI大模型"
-```
-
-然后保存配置并重启 Clash。
-
----
-
 ## 💡 注意事项
 
 * 本规则以个人优化为主，无法保证覆盖所有网络环境
