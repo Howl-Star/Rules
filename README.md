@@ -40,15 +40,18 @@ https://raw.githubusercontent.com/Howl-Star/Rules/Default/Rules_Online_Mini.ini
 rules:
   - "RULE-SET,https://raw.githubusercontent.com/Howl-Star/Rules/Default/Rules_Online_Mini.ini, AI大模型"
 保存配置并重启 Clash。
+
 💡 注意事项
 本规则以个人优化为主，无法保证覆盖所有网络环境
 可根据需求修改或新增规则，实现更精细化分流
 欢迎通过 issues 或 pull requests 提出改进建议
+
 🤝 贡献指南
 ⭐ Star 项目
 Fork 仓库
 提交新的规则或优化现有配置
 发起 Pull Request
+
 📄 许可证
 
 MIT License
