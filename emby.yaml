@@ -79,3 +79,11 @@ payload:
   - PROCESS-NAME,com.mb.android
   - PROCESS-NAME,com.hush.yamby
   - PROCESS-NAME,com.mountains.hills
+  - DOMAIN,emby.chilledmelon.com
+  - DOMAIN-SUFFIX,cf.xgua.de
+  - DOMAIN-SUFFIX,rn.chilledmelon.com
+  - DOMAIN-SUFFIX,mr.chilledmelon.com
+  - DOMAIN-SUFFIX,seoul.chilledmelon.com
+  - DOMAIN-SUFFIX,sjc.chilledmelon.com
+  - DOMAIN-SUFFIX,daigua.chilledmelon.com
+  - DOMAIN-SUFFIX,fra.chilledmelon.com
