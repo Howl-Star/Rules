@@ -1,31 +1,54 @@
-# 自用 Clash 分流规则
+# 📌 Rules — Clash 分流规则集合
 
-这是一个为 Clash 客户端设计的个人分流规则集 (`Rules_Online_Mini.ini`)，基于 ACL4SSR 格式，用于优化网络访问体验。规则集支持去广告、自动测速，并将中国境内无法访问的 AI 类网站分流至美国节点。
+**Rules** 是一个为 **Clash 代理客户端** 定制的个人分流规则集合，旨在优化网络访问体验、去广告、智能分流 AI 网站流量，并提供自动测速功能。该规则集兼容多种 Clash 配置格式，易于扩展和自定义。
 
-## 功能特点
-- **去广告**：支持，拦截广告和程序相关广告。
-- **自动测速**：支持，自动选择延迟最低的节点。
-- **微软分流**：不支持。
-- **苹果分流**：不支持。
-- **增强中国IP段**：不支持。
-- **增强国外GFW**：不支持。
-- **AI 分流**：将中国境内无法访问的 AI 类网站路由到美国节点 (`🇺🇸.*`)。
+---
 
-## 使用方法
-1. **获取规则集**：
-   - Raw 链接：
+## 🔹 功能特点
 
-https://raw.githubusercontent.com/Howl-Star/Rules/refs/heads/Default/Rules_Online_Mini.ini
-text
-- 或从仓库下载 `Rules_Online_Mini.ini` 文件。
+- 🚫 **去广告**：过滤常见网站广告  
+- ⚡ **自动测速**：优先选择延迟最低的节点  
+- 🌐 **AI 分流**：针对无法直连的 AI 网站流量智能转发  
+- 🛠 **可扩展性强**：支持自定义规则和节点组  
 
-2. **配置 Clash**：
-- 在 Clash 配置文件中添加：
+---
+
+## 📂 文件结构
+
+| 文件名 | 描述 |
+|--------|------|
+| `Rules_Online_Mini.ini` | 主规则文件，Clash 可直接使用 |
+| `academic.yaml` | 学术网站访问优化 |
+| `aimodel.yaml` | AI 模型网站分流规则 |
+| `clashdns.yml` | DNS 优化配置 |
+| `emby.yaml` | Emby 媒体服务器规则 |
+| `steam.yaml` | Steam 平台流量优化 |
+| `fuckbilibilicdn.yaml` | B 站特殊 CDN 分流 |
+
+> ⚠️ 文件名示例，具体内容请参考仓库文件。
+
+---
+
+## 🚀 使用方法（Clash）
+
+1. 获取规则原始链接，例如：
+
+https://raw.githubusercontent.com/Howl-Star/Rules/Default/Rules_Online_Mini.ini
+
+2. 在 Clash 配置文件中添加：
 ```yaml
 rules:
-  - "RULE-SET,https://raw.githubusercontent.com/Howl-Star/Rules/refs/heads/Default/Rules_Online_Mini.ini,💬 AI大模型"
+  - "RULE-SET,https://raw.githubusercontent.com/Howl-Star/Rules/Default/Rules_Online_Mini.ini, AI大模型"
+保存配置并重启 Clash。
+💡 注意事项
+本规则以个人优化为主，无法保证覆盖所有网络环境
+可根据需求修改或新增规则，实现更精细化分流
+欢迎通过 issues 或 pull requests 提出改进建议
+🤝 贡献指南
+⭐ Star 项目
+Fork 仓库
+提交新的规则或优化现有配置
+发起 Pull Request
+📄 许可证
 
-    确保代理节点名称以 🇺🇸 开头（如 🇺🇸 US-Node1），以匹配美国节点。
-
-    验证：
-        访问 openai.com、x.ai 等 AI 网站，确认流量通过美国节点。
+MIT License
